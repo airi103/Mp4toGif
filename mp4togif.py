@@ -53,9 +53,9 @@ class MainForm(npyscreen.FormBaseNewWithMenus):
         self.parentApp.setNextForm(None)
         self.parentApp.switchFormNow()
 
-class FFmpegTUIApp(npyscreen.NPSAppManaged):
+class Mp4ToGif(npyscreen.NPSAppManaged):
     def onStart(self):
         self.addForm("MAIN", MainForm, minimum_lines=19, minimum_columns=45)
 
 if __name__ == "__main__":
-    FFmpegTUIApp().run()
+    Mp4ToGif().run()
